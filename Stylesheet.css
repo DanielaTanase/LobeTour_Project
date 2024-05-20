@@ -1,0 +1,300 @@
+body {
+	margin:0 32px;
+	padding:0;
+	font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.header {
+	background: linear-gradient(rgba(255,255,255, 1), rgba(255,255,255, 0.92));
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 80px;
+	margin:0;
+	padding:0 32px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	box-sizing:border-box;
+	z-index:1;
+}
+
+.logo-one {
+    margin:0;
+} 
+
+.nav {
+	flex:1;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+
+.nav-btn{
+	margin:0 24px;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	justify-content:center;
+	align-items: center;
+}
+
+a:link,a:visited{
+	text-decoration:none;
+	color:#767676;
+}
+
+.nav-btn:hover{
+	transition: all .2s ease-in;
+	font-size:19px;
+	color:black;
+}
+
+.btn-one{
+	width:135px;
+    height:50px;
+
+}
+
+#btn-one{
+	width:129px;
+    height:48px;
+	background-color:#04ddb2;
+	color:white;
+	border:none;
+	border-radius:24px;
+	text-align:center;
+	text-decoration: none;
+	display: inline-block;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#btn-one:hover{
+	transition: all .2s ease-in-out;
+	transform: scale(1.05);
+	cursor:pointer;
+}
+
+main{
+	margin:auto;
+	padding-top:80px;
+	max-width:1072px;
+	text-align:center;
+	box-sizing:border-box;
+	padding-bottom:40px;
+	border-bottom:0.5px solid rgba(0,0,0,.2);
+}
+
+section{
+	text-align:center;
+	justify-content:center;
+	align-items: center;
+}
+
+#h1first{
+	margin:20px 0;
+	font-size: 56px;
+	font-weight: 800;
+}
+span {
+	color: #04ddb2;
+}
+
+p{
+	max-width: 550px;
+	font-size: 24px;
+	margin: auto;
+	line-height: 34px;
+	padding-bottom:20px;
+}
+
+.video-img{
+	width:100%;
+	max-width:967px;
+	height:auto;
+	border-radius:24px;
+	margin:40px 0 80px 0;
+}
+
+.video-img:hover{
+	transition: all .2s ease-in-out;
+	transform: scale(1.01);
+	box-shadow:0 40px 30px 20px rgba(33,33,33,.1);
+	cursor:pointer;
+}
+
+#h1second{	
+	font-size: 56px;
+    line-height: 1;
+	margin:0 auto;
+    font-weight: 700;
+	max-width:500px;
+}
+
+#btn-two{
+	margin:50px auto;
+	width:168px;
+    height:50px;
+	background-color:#04ddb2;
+	color:white;
+	border:none;
+	border-radius:24px;
+	text-align:center;
+	text-decoration: none;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#btn-two:hover{
+	transition: all .2s ease-in-out;
+	transform: scale(1.05);
+	cursor:pointer;
+}
+
+ footer{
+	 padding:60px 0;
+	 max-width:912px;
+	 margin:auto;
+	 display:flex;
+	 flex-direction:wrap;
+	 justify-content:space-between;
+	 width:100%;
+	 box-sizing:border-box;
+ }
+ .column{
+	 display:flex;
+	 flex-direction:column;
+	 padding-left:0;
+	 padding-right:20px;
+ }
+ 
+ .logo-two{
+	margin-bottom:24px; 
+ }
+ 
+ .title{
+	 margin-bottom:24px; 
+	 font-size:16px;
+	 font-weight:600;
+	 color:#333;
+ }
+ footer div, .rights{
+	 margin-bottom:24px; 
+	 font-size:16px;
+	 line-height:1;
+	 color:#333;
+ }
+ div a:link,div a:visited{
+	 text-decoration:none;
+	 color:#333;
+ }
+.li:hover{
+	 transition:all .2 ease-in;
+	 transform:scale(1.05);
+ }
+ .social{
+	display:flex;
+	flex-direction:column;
+	margin-bottom:0;
+ }
+.icon{
+	margin-bottom:0;
+}
+	
+ .rights, .li{
+	 white-space:nowrap;
+ }
+ 
+	 
+@media screen and (max-width: 1024px) {
+	.nav-btn{
+		margin:0 15px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		margin:0 20px;
+	}
+
+	.header {
+		margin:0;
+		flex-direction: column;
+		align-items:flex-start;
+		padding-left:0;
+		padding-right:0;
+		height:395px;
+		padding-bottom:20px;
+		width:100%;
+		display:flex;
+	}
+
+	.logo-one {
+		margin:0;
+		height:62px;
+		padding:20px 0 20px 20px;
+		border-bottom:0.5px solid rgba(0,0,0,.2);
+		width:100%;
+	} 
+
+	.nav {
+		flex-direction: column;
+		align-items:flex-start;
+		padding-left:20px;
+		margin-top:0;
+		padding-top:10px;
+	}
+
+	.nav-btn{
+		margin:10px 0 10px 0;
+		height:30px;
+		
+	}
+
+	a:link,a:visited{
+		text-decoration:none;
+		color:#767676;
+	}
+
+	.nav-btn:hover{
+		transition: all .2s ease-in;
+		font-size:19px;
+		color:black;
+	}
+
+	.btn-one{
+		height:50px;
+		display:flex;
+		width:100%;
+		margin:auto;
+		
+	}
+
+	#btn-one{
+		width:100%;
+		margin-left:20px;
+		margin-right:20px;
+	}
+
+	#btn-one:hover{
+		transition: all .2s ease-in;
+		transform: scale(1.05);
+		cursor:pointer;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	footer{
+		flex-flow: row wrap;
+		padding-top:20px;
+	}
+	.order{
+		max-width:50%;
+		order:-1;
+	}
+}
+
+ 
